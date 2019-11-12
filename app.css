@@ -91,4 +91,5 @@ body {
 
 .rect-RGB.disabled {
 	cursor: auto;
+	background-color: #232323;
 }
