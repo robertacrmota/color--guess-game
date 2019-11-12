@@ -1,0 +1,94 @@
+body {
+	background-color: #232323;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+#header {
+	background-color: steelblue;
+	color: white;
+	transition:background-color 0.15s linear;
+}
+
+#header p {
+	margin: 0;
+	font-size: 1.4em;
+}
+
+#header h1 {
+	margin: 0;
+	font-size: 3em;
+	font-weight: 800;
+}
+
+#settings {
+	font-size: 0.8em;
+	font-weight: 800;
+	color: steelblue;
+	background-color: white;
+}
+
+#settings > button { 
+	background-color: inherit;
+	border:none; 
+	outline:none;
+	padding: 0;
+	margin: 0;
+	color: inherit;
+	text-transform: uppercase;
+	font-weight: 800;
+}  
+
+#settings p {
+	color: black;
+	font-weight: 400;
+	text-transform: none;
+	padding: 0;
+	margin: 0;
+	visibility: hidden;
+}
+
+#settings button:active { 
+	background-color: steelblue;
+	color: white;
+}  
+
+#settings input {
+	display: none;
+}
+
+#settings label {
+	cursor: pointer;
+	padding: 0 5px;
+}
+
+#settings input:checked + label{
+	background: steelblue;
+	color: white;
+}
+
+#game_area {
+	margin-top: 10px;
+}
+
+#game_area .row:nth-child(1) div{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.row .middle {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.rect-RGB{
+	cursor: pointer;
+	border-radius: 1rem;
+	width: 100px;
+	height: 100px;
+	transition: background-color 0.15s linear;
+}
+
+.rect-RGB.disabled {
+	cursor: auto;
+}
