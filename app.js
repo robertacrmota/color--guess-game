@@ -35,7 +35,7 @@ function init() {
 
 	guessColors = [];
 
-	var nbGuess = (gameLvl === LEVEL_EASY) ? 3 : 6;
+	var nbGuess = (gameLvl === LEVEL_EASY) ? 8 : 20;
 	for(var i = 0; i < nbGuess; i++) {
 		var c = getRandomColor();
 		guessColors.push(c);
@@ -48,7 +48,7 @@ function init() {
 	document.getElementById("header-B").textContent = solColor.B;		
 
 	document.querySelector("#header").style.backgroundColor = headerBgColor;
-	document.querySelector("#game_area > .row:nth-child(2)").style.display = (gameLvl === LEVEL_EASY) ? "none" : "flex";
+	document.querySelector("#game_area > .rect-group:nth-child(2)").style.display = (gameLvl === LEVEL_EASY) ? "none" : "inline";
 	document.querySelector("#btn-reset").textContent = "New Colors";	
 	document.querySelector("#txt-status").textContent = "Try Again!";
 	document.querySelector("#txt-status").style.visibility = "hidden";

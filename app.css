@@ -69,24 +69,26 @@ body {
 
 #game_area {
 	margin-top: 10px;
+	max-width:40%;
 }
 
-#game_area .row:nth-child(1) div{
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.row .middle {
-	margin-right: 10px;
-	margin-left: 10px;
+.rect-group {
+	display:inline;
 }
 
 .rect-RGB{
+	display: inline-block;
 	cursor: pointer;
-	border-radius: 1rem;
-	width: 100px;
-	height: 100px;
+	border-radius: 15px;
+	margin: 5px 5px;
+	width: 17.5%;
+	padding-top: 15%;
 	transition: background-color 0.15s linear;
+}
+
+.rect-RGB:not(.disabled):hover{
+	border: 3px dashed yellow;
+	margin: 2px 2px;
 }
 
 .rect-RGB.disabled {
